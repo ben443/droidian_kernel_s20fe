@@ -20,7 +20,7 @@ jobs:
         run: |
           export ARCH=arm64
           export CROSS_COMPILE=aarch64-linux-gnu-
-          make defconfig
+          make r8q_defconfig
           make -j$(nproc) Image dtbs modules vmlinux
 
       - name: Create Artifact Directory
